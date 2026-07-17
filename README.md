@@ -36,6 +36,8 @@ While the original versions focus on sub-GHz LoRa modules (like the HT-RA62 or R
 | **2x Push Buttons** | [AliExpress](https://es.aliexpress.com/item/4001125532910.html) | <0.50€ | Search for "3\*4\*2.0 2 Pin Buttons". |
 | **2.4GHz Antenna & Pigtail (SX only)** | [AliExpress](https://es.aliexpress.com/item/1005004598468979.html) | ~9€ | Ensure you use a dedicated **2.4GHz** antenna, not a sub-GHz one! |
 | **Custom PCB** | Custom Gerber | Variable | Order via your favorite fabrication house (JLCPCB, PCBWay, etc.). |
+
+
 (Links are non affiliated and only serve as an example)
 
 ## Firmware & Flashing
