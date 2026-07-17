@@ -14,8 +14,8 @@ While the original versions focus on sub-GHz LoRa modules (like the HT-RA62 or R
 
 | Front | Back |
 | :------------ | :---------------------------- |
-| <img width="498" height="682" alt="image" src="https://github.com/user-attachments/assets/8d96614d-f144-4313-88c5-60e54c289da3" />
- |<img width="481" height="657" alt="image" src="https://github.com/user-attachments/assets/44d46e6d-5e4b-4656-8b00-460d66f5e28d" />
+| <img width="300" height="600" alt="image" src="https://github.com/user-attachments/assets/8d96614d-f144-4313-88c5-60e54c289da3" />
+ | <img width="300" height="600" alt="image" src="https://github.com/user-attachments/assets/44d46e6d-5e4b-4656-8b00-460d66f5e28d" />
  |
 
 </details>
