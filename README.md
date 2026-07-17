@@ -29,14 +29,13 @@ While the original versions focus on sub-GHz LoRa modules (like the HT-RA62 or R
 
 | Part | Source / Example | Approx. Cost | Note |
 | :--- | :--- | :--- | :--- |
-| **ProMicro nRF52840** (SuperMini) | [AliExpress]([https://www.aliexpress.com/](https://es.aliexpress.com/item/1005009116054547.html)) | ~5€ | Double-check bootloader compatibility before soldering. |
-| **Ebyte E28-2G4M27S/SX** | [AliExpress]([https://www.aliexpress.com/](https://es.aliexpress.com/item/1005010288386483.html)) | ~7-9€ | 2.4GHz LoRa module (+27dBm high power). |
-| **2x 1M Ohm Resistors** | [AliExpress]([https://www.aliexpress.com/](https://es.aliexpress.com/item/1005002991902748.html)) | <0.50€ | Used for the battery voltage divider. SMD 1206 size. |
-| **OLED SSD1306 I2C** (Optional) | [AliExpress]([https://www.aliexpress.com/](https://es.aliexpress.com/item/1005005970901119.html)) | ~1.50€ | Add insulating tape beneath to prevent shorts against the MCU. |
-| **2x Push Buttons** | [AliExpress]([https://www.aliexpress.com/](https://es.aliexpress.com/item/4001125532910.html)) | <0.50€ | Search for "3\*4\*2.0 2 Pin Buttons". |
-| **2.4GHz Antenna & Pigtail (SX only)** | [AliExpress]([https://www.aliexpress.com/](https://es.aliexpress.com/item/1005004598468979.html)) | ~9€ | Ensure you use a dedicated **2.4GHz** antenna, not a sub-GHz one! |
+| **ProMicro nRF52840** (SuperMini) | [AliExpress](https://es.aliexpress.com/item/1005009116054547.html) | ~5€ | Double-check bootloader compatibility before soldering. |
+| **Ebyte E28-2G4M27S/SX** | [AliExpress](https://es.aliexpress.com/item/1005010288386483.html) | ~7-9€ | 2.4GHz LoRa module (+27dBm high power). |
+| **2x 1M Ohm Resistors** | [AliExpress](https://es.aliexpress.com/item/1005002991902748.html) | <0.50€ | Used for the battery voltage divider. SMD 1206 size. |
+| **OLED SSD1306 I2C** (Optional) | [AliExpress](https://es.aliexpress.com/item/1005005970901119.html) | ~1.50€ | Add insulating tape beneath to prevent shorts against the MCU. |
+| **2x Push Buttons** | [AliExpress](https://es.aliexpress.com/item/4001125532910.html) | <0.50€ | Search for "3\*4\*2.0 2 Pin Buttons". |
+| **2.4GHz Antenna & Pigtail (SX only)** | [AliExpress](https://es.aliexpress.com/item/1005004598468979.html) | ~9€ | Ensure you use a dedicated **2.4GHz** antenna, not a sub-GHz one! |
 | **Custom PCB** | Custom Gerber | Variable | Order via your favorite fabrication house (JLCPCB, PCBWay, etc.). |
-
 (Links are non affiliated and only serve as an example)
 
 ## Firmware & Flashing
