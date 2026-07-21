@@ -5,25 +5,33 @@ A low-cost, high-power 2.4GHz nRF52 device with the form-factor of the Heltec v2
 This repository is a hardware fork derived from **[lupusworax's variant](https://github.com/gargomoma/fakeTec_pcb/issues/16)**, which was originally based on the excellent base design by **[gargomoma](https://github.com/gargomoma/fakeTec_pcb)**.
 
 ## 🚀 What's Different?
-While the original versions focus on sub-GHz LoRa modules (like the HT-RA62 or RA-01SH), this version swaps the RF section out for an **Ebyte E28-2G4M27S/ SX** module. This brings **2.4GHz LoRa capabilities** and a powerful +27dBm power output to the compact Heltec footprint. However, the E28 overhangs outside a bit, so your current faketec cases may need redesigning
+While the original versions focus on sub-GHz LoRa modules (like the HT-RA62 or RA-01SH), this version swaps the RF section out for an **Ebyte E28-2G4M27S/ SX** module. This brings **2.4GHz LoRa capabilities** and a powerful +27dBm power output to the compact Heltec footprint. However, the E28 overhangs outside a bit, so your current faketec cases may need redesigning.
 
 # Pictures
-
 
 <details><summary>Click to open</summary>
 
 <img width="545" height="708" alt="image" src="https://github.com/user-attachments/assets/c57fbee2-593e-4f86-9308-69756b5a0a54" />
 
-
 </details>
 
 ## Features
 - **2.4GHz LoRa Mesh:** Built around the powerful SX1280-based Ebyte E28-2G4M27SX module.
-- **Heltec v3 Form Factor:** Fits seamlessly into existing community 3D-printed cases meant for the original FakeTec or Heltec v3.
+- **Heltec v3 Form Factor:** Fits seamlessly into existing community 3D-printed cases meant for the original FakeTec or Heltec v3 (with slight case modifications for the module overhang).
 - **nRF52840 MCU:** Powered by the affordable ProMicro / SuperMini nRF52840 board.
 - **I2C Expansion:** Dedicated side ports ready to accept a standard SSD1306 OLED screen.
 - **Battery Monitoring:** Integrated battery voltage sensing (supports both SMD and through-hole resistors).
 - **Mounting:** Standard 2mm mounting holes.
+
+## 📜 Changelog
+### [v2] - Pending test
+- **Added in Buck-Boost converter:** Added in a buck-boost converter to allow the E28 to operate at full power (the built in ProMicro 3.3V source onlly allows up to 200mA).
+
+### [v1] - Initial 2.4GHz Release
+- **RF Module Migration:** Replaced sub-GHz LoRa module footprint with **Ebyte E28-2G4M27S / SX** (+27dBm 2.4GHz LoRa).
+- **PCB Layout Updates:** Re-routed SPI/RF traces and pad layout to accommodate the E28 footprint and pinout.
+- **Firmware Variant:** Included ready-to-use Meshtastic firmware variant tailored for this pin mapping.
+- **Documentation & BOM:** Updated bill of materials, parts sources, and credits to reflect 2.4GHz requirements.
 
 ## Bill of Materials (BOM)
 
@@ -37,8 +45,7 @@ While the original versions focus on sub-GHz LoRa modules (like the HT-RA62 or R
 | **2.4GHz Antenna & Pigtail (SX only)** | [AliExpress](https://es.aliexpress.com/item/1005004598468979.html) | ~9€ | Ensure you use a dedicated **2.4GHz** antenna, not a sub-GHz one! |
 | **Custom PCB** | Custom Gerber | Variable | Order via your favorite fabrication house (JLCPCB, PCBWay, etc.). |
 
-
-(Links are non affiliated and only serve as an example)
+*(Links are non-affiliated and only serve as examples)*
 
 ## Firmware & Flashing
 
@@ -50,7 +57,6 @@ Because this board uses a 2.4GHz SX1280 radio instead of the traditional sub-GHz
 - **[gargomoma](https://github.com/gargomoma)** for creating the original open-source `fakeTec_pcb` layout and concept.
 - **[lupusworax](https://github.com/gargomoma/fakeTec_pcb/issues/16)** for the intermediate design improvements that this branch directly builds upon.
 - Designed and modified for 2.4GHz by [EmilioAl](https://github.com/EmilioAL-Git) & yours truly.
-
 
 ### Disclaimer
 No warranty is provided. You build and operate this hardware at your own risk. Always ensure compliance with local radio frequency regulations regarding 2.4GHz transmission power limits.
