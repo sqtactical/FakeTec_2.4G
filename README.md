@@ -26,6 +26,7 @@ While the original versions focus on sub-GHz LoRa modules (like the HT-RA62 or R
 ## 📜 Changelog
 ### [v2.1] - Pending test
 - **Improved the silkscreen:** Improved the silkscreen, to look more like the original faketec V4 (with all the pin markings), and also added in a small reminder to see which resistor value goes where. Improved the selector so you now know if you're feeding it with the ProMicro or the buck-boost
+- **Increased trace thickness:** Increased the trace thickness from the selector to the input of the E28 (just in case).
 
 
 ### [v2] - Pending test
