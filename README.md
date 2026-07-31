@@ -24,8 +24,13 @@ While the original versions focus on sub-GHz LoRa modules (like the HT-RA62 or R
 - **Mounting:** Standard 2mm mounting holes.
 
 ## 📜 Changelog
+### [v2.1] - Pending test
+- **Improved the silkscreen:** Improved the silkscreen, to look more like the original faketec V4 (with all the pin markings), and also added in a small reminder to see which resistor value goes where. Improved the selector so you now know if you're feeding it with the ProMicro or the buck-boost
+
+
 ### [v2] - Pending test
-- **Added in Buck-Boost converter:** Added in a buck-boost converter to allow the E28 to operate at full power (the built in ProMicro 3.3V source onlly allows up to 200mA).
+- **Added in Buck-Boost converter:** Added in a buck-boost converter to allow the E28 to operate at full power (the built in ProMicro 3.3V source onlly allows up to 24dBm).
+- - **Added in Buck-Boost or Pro Micro selector:** Added in a selector so you can choose between running the E28 with the built in ProMicro regulator or an external buck-boost converter
 
 ### [v1] - Initial 2.4GHz Release
 - **RF Module Migration:** Replaced sub-GHz LoRa module footprint with **Ebyte E28-2G4M27S / SX** (+27dBm 2.4GHz LoRa).
@@ -42,6 +47,7 @@ While the original versions focus on sub-GHz LoRa modules (like the HT-RA62 or R
 | **2x 1M Ohm Resistors** | [AliExpress](https://es.aliexpress.com/item/1005002991902748.html) | <0.50€ | Used for the battery voltage divider. SMD 1206 size. |
 | **OLED SSD1306 I2C** (Optional) | [AliExpress](https://es.aliexpress.com/item/1005005970901119.html) | ~1.50€ | Add insulating tape beneath to prevent shorts against the MCU. |
 | **2x Push Buttons** | [AliExpress](https://es.aliexpress.com/item/4001125532910.html) | <0.50€ | Search for "3\*4\*2.0 2 Pin Buttons". |
+| **Mini buck-boost (Optional)** | [AliExpress](https://es.aliexpress.com/item/1005011637436564.html) | ~3€ | Mini buck-boost to run the E28 at full power. Only for V2.0 and beyond |
 | **2.4GHz Antenna & Pigtail (SX only)** | [AliExpress](https://es.aliexpress.com/item/1005004598468979.html) | ~9€ | Ensure you use a dedicated **2.4GHz** antenna, not a sub-GHz one! |
 | **Custom PCB** | Custom Gerber | Variable | Order via your favorite fabrication house (JLCPCB, PCBWay, etc.). |
 
