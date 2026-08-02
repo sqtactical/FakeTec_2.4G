@@ -20,7 +20,7 @@ While the original versions focus on sub-GHz LoRa modules (like the HT-RA62 or R
 - **Heltec v3 Form Factor:** Fits seamlessly into existing community 3D-printed cases meant for the original FakeTec or Heltec v3 (with slight case modifications for the module overhang).
 - **nRF52840 MCU:** Powered by the affordable ProMicro / SuperMini nRF52840 board.
 - **I2C Expansion:** Dedicated side ports ready to accept a standard SSD1306 OLED screen.
-- **Battery Monitoring:** Integrated battery voltage sensing (supports both SMD and through-hole resistors).
+- **Battery Monitoring:** Integrated battery voltage sensing (1206 SMD resistors).
 - **Mounting:** Standard 2mm mounting holes.
 
 ## 📜 Changelog
