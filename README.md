@@ -2,7 +2,7 @@
 
 A low-cost, high-power 2.4GHz nRF52 device with the form-factor of the Heltec v2 & v3 devices, compatible with [Meshtastic](https://meshtastic.org/)®. 
 
-This repository is a hardware fork derived from **[lupusworax's variant](https://github.com/gargomoma/fakeTec_pcb/issues/16)**, which was originally based on the excellent base design by **[gargomoma](https://github.com/gargomoma/fakeTec_pcb)**.
+This repository is a hardware fork derived from **[lupusworax's variant](https://github.com/gargomoma/fakeTec_pcb/issues/16)**, which was originally based on the excellent base design by **[gargomoma](https://github.com/gargomoma)**.
 
 ## 🚀 What's Different?
 While the original versions focus on sub-GHz LoRa modules (like the HT-RA62 or RA-01SH), this version swaps the RF section out for an **Ebyte E28-2G4M27S/ SX** module. This brings **2.4GHz LoRa capabilities** and a powerful +27dBm power output to the compact Heltec footprint. However, the E28 overhangs outside a bit, so your current faketec cases may need redesigning.
@@ -53,6 +53,33 @@ While the original versions focus on sub-GHz LoRa modules (like the HT-RA62 or R
 | **Custom PCB** | Custom Gerber | Variable | Order via your favorite fabrication house (JLCPCB, PCBWay, etc.). |
 
 *(Links are non-affiliated and only serve as examples)*
+
+## 🛠️ Mounting & Assembly Instructions
+
+> ⚠️ **Important Safety Warning:** NEVER power on or transmit with the board without a 2.4GHz antenna connected to the E28 module! Doing so can permanently damage the RF power amplifier.
+
+To ensure a clean and hassle-free build, it is recommended to assemble the board in order of component height (lowest profile components first):
+
+### 1️⃣ **Step 1: Ebyte E28 Module Soldering**
+Due to the fine castellation pads on the **E28-2G4M27S/SX**, alignment and technique are key:
+* **Recommended Method A (Hot Plate):** Apply solder paste to the pads, align the module carefully, and reflow on a hot plate.
+* **Recommended Method B (Drag Soldering):** Tack down two corner pads to anchor the module in place. Apply a generous amount of liquid/gel flux, and use **drag soldering** with a **KU tip (knife edge)** and a small amount of solder across the castellated pads. Clean any excess flux with isopropyl alcohol (IPA).
+* **Method C:** Patiently and very carefully solder each pad one by one with a fine tip. Reccomended using flux and preheating on a hot bed if possible (80-90ºC). Be really careful since it's really easy to bridge two pads together. Have some soldering wick ready just in case.
+
+### 2️⃣ **Step 2: Power and Microcontroller**
+* **Mini Buck-Boost Converter (Optional, V2.0+):** If using the external buck-boost for maximum transmission power (+27dBm), solder it into position now.
+* **ProMicro / SuperMini nRF52840:** Solder the MCU board directly to the PCB or use low-profile female pin headers if you prefer it to be removable.
+
+### 3️⃣ **Step 2: SMD Components & Small Hardware**
+* **Battery Divider Resistors:** Solder the two SMD 1206 1MΩ (or 680K and 1M) resistors in their designated locations on the PCB.
+* **Push Buttons:** Solder the two SMD tactile buttons (User/Reset).
+* **Power Selector Jumper (v2.0+):** Configure the solder selector bridge to choose whether you will feed the E28 radio from the ProMicro's onboard regulator or from the external buck-boost module.
+
+### 4️⃣ **Step 4: Screen & Finishing Touches**
+* **SSD1306 OLED Display (Optional):** If mounting a display directly above the MCU, **always place a layer of insulating Kapton/electrical tape** underneath the screen module to avoid shorting out component pins on the nRF52 board.
+* **Antenna Connection (For E28-2G4M27SX or S without built in anntena):** Snap on your IPEX pigtail and secure your **2.4GHz antenna** before testing.
+
+---
 
 ## Firmware & Flashing
 
