@@ -4,6 +4,9 @@ A low-cost, high-power 2.4GHz nRF52 device with the form-factor of the Heltec v2
 
 This repository is a hardware fork derived from **[lupusworax's variant](https://github.com/gargomoma/fakeTec_pcb/issues/16)**, which was originally based on the excellent base design by **[gargomoma](https://github.com/gargomoma)**.
 
+> ⚠️ **Legal Disclaimer:**  
+> **🇬🇧:** It is the sole responsibility of the end user to ensure that the assembly, configuration, and operation of these PCBs comply with applicable local telecommunications laws and regulations.
+
 ## 🚀 What's Different?
 While the original versions focus on sub-GHz LoRa modules (like the HT-RA62 or RA-01SH), this version swaps the RF section out for an **Ebyte E28-2G4M27S/ SX** module. This brings **2.4GHz LoRa capabilities** and a powerful +27dBm power output to the compact Heltec footprint. However, the E28 overhangs outside a bit, so your current faketec cases may need redesigning.
 
